@@ -23,4 +23,10 @@
 
 cmake_minimum_required(VERSION 3.14)
 
-add_subdirectory(utf8-string)
+set(LIBRARY_NAME utf8-string)
+
+set(SOURCES utf8-string.cpp)
+set(HEADERS utf8-string.hpp)
+
+add_library(${LIBRARY_NAME} STATIC ${SOURCES} ${HEADERS})
+target_include_directories(${LIBRARY_NAME} PUBLIC ./)
