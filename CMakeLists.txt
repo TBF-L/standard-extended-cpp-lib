@@ -28,7 +28,9 @@ project(standard-extended-cpp-lib LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_compile_options(-Wall -Wextra -Wconversion)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+add_compile_options(-Wall -Wextra -Wconversion -v)
 
 add_subdirectory(test)
 add_subdirectory(libs)
