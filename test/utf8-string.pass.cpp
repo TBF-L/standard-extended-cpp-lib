@@ -24,6 +24,8 @@
 #include <gtest/gtest.h>
 #include <utf8-string.hpp>
 
+using namespace bfl;
+
 // ---------------------------------------------------------------------------------------------------------------------
 TEST(utf8_string, replace_char_case_1)
 {
