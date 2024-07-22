@@ -29,6 +29,15 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+option(BUILD_STATIC "Build static libraries" ON)
+
+message(STATUS "OS: ${CMAKE_SYSTEM_NAME}")
+message(STATUS "Build static: ${BUILD_STATIC}")
+message(STATUS "PIC: ${CMAKE_POSITION_INDEPENDENT_CODE}")
+message(STATUS "Default CXX standard: ${CMAKE_CXX_STANDARD}")
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
 
 add_compile_options(-Wall -Wextra -Wconversion -v)
 

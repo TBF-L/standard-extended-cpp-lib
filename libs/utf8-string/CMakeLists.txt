@@ -24,9 +24,17 @@
 cmake_minimum_required(VERSION 3.14)
 
 set(LIBRARY_NAME utf8-string)
+set(LIBRARY_OBJ_NAME utf8-string-obj)
 
 set(SOURCES utf8-string.cpp)
 set(HEADERS utf8-string.hpp)
 
-add_library(${LIBRARY_NAME} STATIC ${SOURCES} ${HEADERS})
+add_library(${LIBRARY_OBJ_NAME} OBJECT ${SOURCES} ${HEADERS})
+
+if (BUILD_STATIC)
+    add_library(${LIBRARY_NAME} STATIC $<TARGET_OBJECTS:${LIBRARY_OBJ_NAME}>)
+else()
+    add_library(${LIBRARY_NAME} SHARED $<TARGET_OBJECTS:${LIBRARY_OBJ_NAME}>)
+endif()
+
 target_include_directories(${LIBRARY_NAME} PUBLIC ./)
