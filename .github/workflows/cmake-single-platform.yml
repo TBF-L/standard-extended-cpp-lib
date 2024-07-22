@@ -22,6 +22,7 @@ jobs:
     strategy:
       matrix:
         compiler: [clang-18, gcc-13]
+        cmake_build_lib_flag: [ "-DBUILD_STATIC=ON", "-DBUILD_STATIC=OFF" ]
 
     steps:
     - uses: actions/checkout@v4
@@ -48,9 +49,9 @@ jobs:
       # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
       run: |
         if [[ "${{matrix.compiler}}" == "clang-18" ]]; then
-          cmake -G Ninja -B ${{github.workspace}}/build -DCMAKE_C_COMPILER=clang-18 -DCMAKE_CXX_COMPILER=clang++-18 -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+          cmake -G Ninja -B ${{github.workspace}}/build -DCMAKE_C_COMPILER=clang-18 -DCMAKE_CXX_COMPILER=clang++-18 ${{matrix.cmake_build_lib_flag}} -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
         elif [[ "${{matrix.compiler}}" == "gcc-13" ]]; then
-          cmake -G Ninja -B ${{github.workspace}}/build -DCMAKE_C_COMPILER=gcc-13 -DCMAKE_CXX_COMPILER=g++-13 -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+          cmake -G Ninja -B ${{github.workspace}}/build -DCMAKE_C_COMPILER=gcc-13 -DCMAKE_CXX_COMPILER=g++-13 ${{matrix.cmake_build_lib_flag}} -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
         fi
         
     - name: Build
