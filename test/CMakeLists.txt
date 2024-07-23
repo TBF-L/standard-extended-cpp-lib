@@ -33,12 +33,16 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "GN
 endif()
 
 file(GLOB_RECURSE LIB_TESTS ${CMAKE_CURRENT_SOURCE_DIR}/*pass.cpp)
+file(GLOB_RECURSE LIB_HEADERS ${CMAKE_SOURCE_DIR}/header-only/include/*)
 
 set(LINK_LIBS 
     utf8-string    
 )
 
-add_executable(${PROJECT_NAME} ${LIB_TESTS})
+add_executable(${PROJECT_NAME} ${LIB_TESTS} ${LIB_HEADERS})
+
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/header-only/include)
+
 target_link_libraries(${PROJECT_NAME}
     GTest::gtest  
     ${LINK_LIBS}  
