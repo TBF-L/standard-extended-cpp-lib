@@ -1,3 +1,7 @@
+/**
+ * @file bfl-ranges.hpp
+ * */
+
 #pragma once
 
 #include <concepts>
@@ -13,6 +17,10 @@ namespace bfl
         auto push_back_range(T&&) = delete;
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------
+        /**
+         * @param[out] container - container which have push_back method
+         * @param[in] values - values to be added
+         * */
         template <typename Container, typename... Values> requires (std::same_as<typename Container::value_type, Values> && ...)
         inline auto push_back_range(Container& container, Values&&... values) -> decltype(std::declval<Container>().push_back(typename Container::value_type{}))
         {
@@ -24,6 +32,10 @@ namespace bfl
         auto push_front_range(T&&) = delete;
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------
+        /**
+         * @param[out] container - container which have push_front method
+         * @param[in] values - values to be added
+         * */
         template <typename Container, typename... Values> requires (std::same_as<typename Container::value_type, Values> && ...)
         inline auto push_front_range(Container& container, Values&&... values) -> decltype(std::declval<Container>().push_front(typename Container::value_type{}))
         {
@@ -35,6 +47,10 @@ namespace bfl
         auto push_range(T&&) = delete;
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------
+        /**
+         * @param[out] container - container which have push method
+         * @param[in] values - values to be added
+         * */
         template <typename Container, typename... Values> requires (std::same_as<typename Container::value_type, Values> && ...)
         inline auto push_range(Container& container, Values&&... values) -> decltype(std::declval<Container>().push(typename Container::value_type{}))
         {
@@ -42,6 +58,10 @@ namespace bfl
         }
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------
+        /**
+         * @param[in] container - some kind of container 
+         * @param[in] value - any value
+         * */
         template <typename Container, typename Value>
         inline bool contains(const Container& container, const Value& value)
         {
@@ -49,6 +69,10 @@ namespace bfl
         }
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------
+        /**
+         * @param[in] container - some kind of container 
+         * @param[in] values - any values
+         * */
         template <typename Container, typename... Values>
         inline bool contains_all(const Container& container, Values&&... values)
         {
@@ -56,6 +80,10 @@ namespace bfl
         }
         
         // ----------------------------------------------------------------------------------------------------------------------------------------------
+        /**
+         * @param[in] container - some kind of container 
+         * @param[in] values - any values
+         * */
         template <typename Container, typename... Values>
         inline bool contains_any(const Container& container, Values&&... values)
         {
@@ -63,6 +91,10 @@ namespace bfl
         }
         
         // ----------------------------------------------------------------------------------------------------------------------------------------------
+        /**
+         * @param[in] container - some kind of container 
+         * @param[in] values - any values
+         * */
         template <typename Container, typename... Values>
         inline bool contains_none(const Container& container, Values&&... values)
         {
