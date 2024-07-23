@@ -1,0 +1,89 @@
+\doxysection{bfl\+::utf8\+::ustring Class Reference}
+\hypertarget{classbfl_1_1utf8_1_1ustring}{}\label{classbfl_1_1utf8_1_1ustring}\index{bfl::utf8::ustring@{bfl::utf8::ustring}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a195f184ffe180f1aea2df4dc32544463}\label{classbfl_1_1utf8_1_1ustring_a195f184ffe180f1aea2df4dc32544463} 
+typedef std\+::array$<$ char, 5 $>$ {\bfseries uchar}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a235c2f774c3d7750710147e73e6e281a}\label{classbfl_1_1utf8_1_1ustring_a235c2f774c3d7750710147e73e6e281a} 
+{\bfseries ustring} (const std\+::size\+\_\+t bytes\+\_\+reserve)
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a42b2cd0e324453651957b914a8df9014}\label{classbfl_1_1utf8_1_1ustring_a42b2cd0e324453651957b914a8df9014} 
+{\bfseries ustring} (const char \texorpdfstring{$\ast$}{*}default\+\_\+string)
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a34808bfa150943ae0f120cf396a011c5}\label{classbfl_1_1utf8_1_1ustring_a34808bfa150943ae0f120cf396a011c5} 
+{\bfseries ustring} (const char \texorpdfstring{$\ast$}{*}default\+\_\+string, const std\+::size\+\_\+t bytes\+\_\+reserve)
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a2e2b188a5a054cb938f6f2eb11c4cad5}\label{classbfl_1_1utf8_1_1ustring_a2e2b188a5a054cb938f6f2eb11c4cad5} 
+{\bfseries ustring} (const std\+::basic\+\_\+string$<$ char $>$ \&default\+\_\+string)
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a0ee5c9f48130a66576b82fb1522c305e}\label{classbfl_1_1utf8_1_1ustring_a0ee5c9f48130a66576b82fb1522c305e} 
+{\bfseries ustring} (const std\+::basic\+\_\+string\+\_\+view$<$ char $>$ \&default\+\_\+string)
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a1ae6017e03d2a0229d0d4523db04da25}\label{classbfl_1_1utf8_1_1ustring_a1ae6017e03d2a0229d0d4523db04da25} 
+{\bfseries ustring} (const \mbox{\hyperlink{classbfl_1_1utf8_1_1ustring}{ustring}} \&other)
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a22ceb0b75e943911b8be9b6ec268c51a}\label{classbfl_1_1utf8_1_1ustring_a22ceb0b75e943911b8be9b6ec268c51a} 
+{\bfseries ustring} (\mbox{\hyperlink{classbfl_1_1utf8_1_1ustring}{ustring}} \&\&other) noexcept
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_afed7f0afb23c9910910d36f5f396f9e0}\label{classbfl_1_1utf8_1_1ustring_afed7f0afb23c9910910d36f5f396f9e0} 
+\mbox{\hyperlink{classbfl_1_1utf8_1_1ustring}{ustring}} \& {\bfseries operator=} (const \mbox{\hyperlink{classbfl_1_1utf8_1_1ustring}{ustring}} \&other)
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_ae5b23c39a4a238aa0aecb8cd82ef6ea7}\label{classbfl_1_1utf8_1_1ustring_ae5b23c39a4a238aa0aecb8cd82ef6ea7} 
+\mbox{\hyperlink{classbfl_1_1utf8_1_1ustring}{ustring}} \& {\bfseries operator=} (\mbox{\hyperlink{classbfl_1_1utf8_1_1ustring}{ustring}} \&\&other) noexcept
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_ae802fdde1c17f47e29033b1848288aad}\label{classbfl_1_1utf8_1_1ustring_ae802fdde1c17f47e29033b1848288aad} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classbfl_1_1utf8_1_1ustring}{ustring}} \&other) const
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_af1bf8c46ecad3e72cac9616f9a22faab}\label{classbfl_1_1utf8_1_1ustring_af1bf8c46ecad3e72cac9616f9a22faab} 
+bool {\bfseries operator==} (const char \texorpdfstring{$\ast$}{*}other) const
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a5aa72780351c4751af53f218dfe94284}\label{classbfl_1_1utf8_1_1ustring_a5aa72780351c4751af53f218dfe94284} 
+bool {\bfseries operator==} (const std\+::basic\+\_\+string$<$ char $>$ \&other) const
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a2224b492539998b808f2b7b2594a7e9e}\label{classbfl_1_1utf8_1_1ustring_a2224b492539998b808f2b7b2594a7e9e} 
+bool {\bfseries operator==} (const std\+::basic\+\_\+string\+\_\+view$<$ char $>$ \&other) const
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a5b4cae0ae9838df03cbaac6115102077}\label{classbfl_1_1utf8_1_1ustring_a5b4cae0ae9838df03cbaac6115102077} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classbfl_1_1utf8_1_1ustring}{ustring}} \&other) const
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a77a30299ccdc0ce495596c7fa0f15d68}\label{classbfl_1_1utf8_1_1ustring_a77a30299ccdc0ce495596c7fa0f15d68} 
+bool {\bfseries operator!=} (const char \texorpdfstring{$\ast$}{*}other) const
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a5608452391037bd817d5a7497bd1e95a}\label{classbfl_1_1utf8_1_1ustring_a5608452391037bd817d5a7497bd1e95a} 
+bool {\bfseries operator!=} (const std\+::basic\+\_\+string$<$ char $>$ \&other) const
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a38a1a03777e13e89578ea54f419416ca}\label{classbfl_1_1utf8_1_1ustring_a38a1a03777e13e89578ea54f419416ca} 
+bool {\bfseries operator!=} (const std\+::basic\+\_\+string\+\_\+view$<$ char $>$ \&other) const
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a8135157e44e595c885756a6070bc1ecc}\label{classbfl_1_1utf8_1_1ustring_a8135157e44e595c885756a6070bc1ecc} 
+const ustring\+::uchar {\bfseries operator\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t index) const
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_af6113f060e4e33ca1a0409b468cf5a2e}\label{classbfl_1_1utf8_1_1ustring_af6113f060e4e33ca1a0409b468cf5a2e} 
+void {\bfseries replace\+\_\+char} (std\+::basic\+\_\+string\+\_\+view$<$ char $>$ new\+\_\+symbol, std\+::size\+\_\+t idx)
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_ab15197f4faeb2b46f3a5247c0a31b109}\label{classbfl_1_1utf8_1_1ustring_ab15197f4faeb2b46f3a5247c0a31b109} 
+std\+::basic\+\_\+string$<$ char $>$ \& {\bfseries get\+\_\+str} ()
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_a65e9b18623eadd357f6a8bcc25e81d47}\label{classbfl_1_1utf8_1_1ustring_a65e9b18623eadd357f6a8bcc25e81d47} 
+const std\+::basic\+\_\+string$<$ char $>$ \& {\bfseries get\+\_\+c\+\_\+str} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_aeb7fc2abd031df420172f0dd5d64054b}\label{classbfl_1_1utf8_1_1ustring_aeb7fc2abd031df420172f0dd5d64054b} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classbfl_1_1utf8_1_1ustring}{ustring}} \&ustr)
+\item 
+\Hypertarget{classbfl_1_1utf8_1_1ustring_adf97aa545c8307f8beeafdce7c8f6d3b}\label{classbfl_1_1utf8_1_1ustring_adf97aa545c8307f8beeafdce7c8f6d3b} 
+std\+::istream \& {\bfseries operator$>$$>$} (std\+::istream \&is, \mbox{\hyperlink{classbfl_1_1utf8_1_1ustring}{ustring}} \&ustr)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/who/standard-\/extended-\/cpp-\/lib/libs/utf8-\/string/utf8-\/string.\+hpp\item 
+/home/who/standard-\/extended-\/cpp-\/lib/libs/utf8-\/string/utf8-\/string.\+cpp\end{DoxyCompactItemize}

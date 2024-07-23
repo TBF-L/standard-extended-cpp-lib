@@ -1,0 +1,37 @@
+\chapter{Customization Points}
+\hypertarget{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f}{}\label{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f}\index{Customization Points@{Customization Points}}
+\label{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md381}%
+\Hypertarget{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md381}%
+ The custom directory is an injection point for custom user configurations.\hypertarget{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md382}{}\doxysection{\texorpdfstring{Header {\ttfamily gtest.\+h}}{Header {\ttfamily gtest.\+h}}}\label{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md382}
+\hypertarget{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md383}{}\doxysubsection{\texorpdfstring{The following macros can be defined\+:}{The following macros can be defined\+:}}\label{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md383}
+
+\begin{DoxyItemize}
+\item {\ttfamily GTEST\+\_\+\+OS\+\_\+\+STACK\+\_\+\+TRACE\+\_\+\+GETTER\+\_\+} -\/ The name of an implementation of {\ttfamily Os\+Stack\+Trace\+Getter\+Interface}.
+\item {\ttfamily GTEST\+\_\+\+CUSTOM\+\_\+\+TEMPDIR\+\_\+\+FUNCTION\+\_\+} -\/ An override for {\ttfamily testing\+::\+Temp\+Dir()}. See {\ttfamily testing\+::\+Temp\+Dir} for semantics and signature.
+\end{DoxyItemize}\hypertarget{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md384}{}\doxysection{\texorpdfstring{Header {\ttfamily gtest-\/port.\+h}}{Header {\ttfamily gtest-\/port.\+h}}}\label{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md384}
+The following macros can be defined\+:\hypertarget{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md385}{}\doxysubsection{\texorpdfstring{Logging\+:}{Logging\+:}}\label{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md385}
+
+\begin{DoxyItemize}
+\item {\ttfamily GTEST\+\_\+\+LOG\+\_\+(severity)}
+\item {\ttfamily GTEST\+\_\+\+CHECK\+\_\+(condition)}
+\item Functions {\ttfamily Log\+To\+Stderr()} and {\ttfamily Flush\+Info\+Log()} have to be provided too.
+\end{DoxyItemize}\hypertarget{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md386}{}\doxysubsection{\texorpdfstring{Threading\+:}{Threading\+:}}\label{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md386}
+
+\begin{DoxyItemize}
+\item {\ttfamily GTEST\+\_\+\+HAS\+\_\+\+NOTIFICATION\+\_\+} -\/ Enabled if Notification is already provided.
+\item {\ttfamily GTEST\+\_\+\+HAS\+\_\+\+MUTEX\+\_\+\+AND\+\_\+\+THREAD\+\_\+\+LOCAL\+\_\+} -\/ Enabled if {\ttfamily Mutex} and {\ttfamily Thread\+Local} are already provided. Must also provide {\ttfamily GTEST\+\_\+\+DECLARE\+\_\+\+STATIC\+\_\+\+MUTEX\+\_\+(mutex)} and {\ttfamily GTEST\+\_\+\+DEFINE\+\_\+\+STATIC\+\_\+\+MUTEX\+\_\+(mutex)}
+\item {\ttfamily GTEST\+\_\+\+EXCLUSIVE\+\_\+\+LOCK\+\_\+\+REQUIRED\+\_\+(locks)}
+\item {\ttfamily GTEST\+\_\+\+LOCK\+\_\+\+EXCLUDED\+\_\+(locks)}
+\end{DoxyItemize}\hypertarget{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md387}{}\doxysubsection{\texorpdfstring{Underlying library support features}{Underlying library support features}}\label{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md387}
+
+\begin{DoxyItemize}
+\item {\ttfamily GTEST\+\_\+\+HAS\+\_\+\+CXXABI\+\_\+\+H\+\_\+}
+\end{DoxyItemize}\hypertarget{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md388}{}\doxysubsection{\texorpdfstring{Exporting API symbols\+:}{Exporting API symbols\+:}}\label{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md388}
+
+\begin{DoxyItemize}
+\item {\ttfamily GTEST\+\_\+\+API\+\_\+} -\/ Specifier for exported symbols.
+\end{DoxyItemize}\hypertarget{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md389}{}\doxysection{\texorpdfstring{Header {\ttfamily gtest-\/printers.\+h}}{Header {\ttfamily gtest-\/printers.\+h}}}\label{md__2home_2who_2standard-extended-cpp-lib_2dependencies_2googletest-1_814_80_2googletest_2includfb882df9c090ba4d66f386ea5bb38c6f_autotoc_md389}
+
+\begin{DoxyItemize}
+\item See documentation at {\ttfamily \doxylink{gtest-printers_8h_source}{gtest/gtest-\/printers.\+h}} for details on how to define a custom printer. 
+\end{DoxyItemize}
