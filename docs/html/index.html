@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Standard Extended C++ Library: standard-extended-cpp-lib</title>
+<title>Standard Extended C++ Library: Standard Extended C++ Library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,10 +84,44 @@ $(function(){ initResizable(false); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">standard-extended-cpp-lib </div></div>
+  <div class="headertitle"><div class="title">Standard Extended C++ Library </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2home_2who_2standard-extended-cpp-lib_2README"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__2home_2who_2standard-extended-cpp-lib_2README"></a> </p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+🎯 Purpose of this project</h1>
+<p>This project is made more for fun and for the community than for use in real production. Here you can find useful functionality and use it in your projects. Contributors are also very welcome!</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+🖥 Supported OS</h1>
+<ul class="check">
+<li class="checked">Linux</li>
+<li class="unchecked">Windows (not verified)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+📜 Supported Compilers</h1>
+<ul>
+<li>clang++ (verified on 18.1.8)</li>
+<li>g++ (verified on 13.1.0)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
+⚙️ Tech Stack</h1>
+<ul>
+<li>C++ &gt;= 20</li>
+<li>CMake &gt;= 3.14</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md5"></a>
+🛠 Build</h1>
+<p>Build options: </p><div class="fragment"><div class="line">-DCMAKE_BUILD_TYPE -&gt; Debug, Release, RelWithDebInfo, MinSizeRel</div>
+<div class="line">-DBUILD_STATIC=ON -&gt; static library build is enabled </div>
+<div class="line">-DBUILD_STATIC=OFF -&gt; static library build is disabled, dynamic library building is enabled </div>
+</div><!-- fragment --><p> How to build: </p><div class="fragment"><div class="line">git clone https://github.com/TBF-L/standard-extended-cpp-lib</div>
+<div class="line">cd standard-extended-cpp-lib</div>
+<div class="line">mkdir build &amp;&amp; cd build </div>
+<div class="line">cmake -G Ninja -DBUILD_STATIC=ON -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug ..</div>
+<div class="line">ninja -j4 </div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
+📄 Docs</h1>
+<p>Click <a href="https://tbf-l.github.io/standard-extended-cpp-lib/html/index.html">here</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>
 </div><!-- contents -->
