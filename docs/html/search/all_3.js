@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lib_0',['standard-extended-cpp-lib',['../index.html',1,'']]]
+  ['extended_20c_20library_0',['Standard Extended C++ Library',['../index.html',1,'']]]
 ];
