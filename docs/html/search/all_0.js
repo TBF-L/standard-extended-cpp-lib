@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['bfl_2dranges_2ehpp_0',['bfl-ranges.hpp',['../bfl-ranges_8hpp.html',1,'']]],
-  ['build_1',['🛠 Build',['../index.html#autotoc_md5',1,'']]]
+  ['auto_5fperf_5ftimer_0',['auto_perf_timer',['../classbfl_1_1auto__perf__timer.html',1,'bfl::auto_perf_timer&lt; PerfTimer, CharType, OutStream &gt;'],['../classbfl_1_1auto__perf__timer.html#abfce930855ef677a1e8aa57e7b600eee',1,'bfl::auto_perf_timer::auto_perf_timer()']]]
 ];

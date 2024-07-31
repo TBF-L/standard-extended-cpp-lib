@@ -3,6 +3,7 @@
 {\ttfamily \#include $<$concepts$>$}\newline
 {\ttfamily \#include $<$ranges$>$}\newline
 {\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -35,12 +36,12 @@ requires (std\+::same\+\_\+as$<$typename Container\+::value\+\_\+type, Values$>$
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{bfl-ranges_8hpp_ab1698a0b2ec0d33943f65e0f8edae0f8}\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!contains@{contains}}
+\Hypertarget{bfl-ranges_8hpp_ab1698a0b2ec0d33943f65e0f8edae0f8}\label{bfl-ranges_8hpp_ab1698a0b2ec0d33943f65e0f8edae0f8} 
+\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!contains@{contains}}
 \index{contains@{contains}!bfl-\/ranges.hpp@{bfl-\/ranges.hpp}}
 \doxysubsubsection{\texorpdfstring{contains()}{contains()}}
-{\footnotesize\ttfamily \label{bfl-ranges_8hpp_ab1698a0b2ec0d33943f65e0f8edae0f8} 
-template$<$typename Container , typename Value $>$ \\
-bool bfl\+::ranges\+::contains (\begin{DoxyParamCaption}\item[{const Container \&}]{container}{, }\item[{const Value \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename Container , typename Value $>$ \\
+bool bfl\+::ranges\+::contains (\begin{DoxyParamCaption}\item[{const Container \&}]{container,  }\item[{const Value \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -49,12 +50,12 @@ bool bfl\+::ranges\+::contains (\begin{DoxyParamCaption}\item[{const Container \
 \mbox{\texttt{ in}}  & {\em value} & -\/ any value \\
 \hline
 \end{DoxyParams}
-\Hypertarget{bfl-ranges_8hpp_ae3b05b3b06c890d53bc1f80257fcfc72}\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!contains\_all@{contains\_all}}
+\Hypertarget{bfl-ranges_8hpp_ae3b05b3b06c890d53bc1f80257fcfc72}\label{bfl-ranges_8hpp_ae3b05b3b06c890d53bc1f80257fcfc72} 
+\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!contains\_all@{contains\_all}}
 \index{contains\_all@{contains\_all}!bfl-\/ranges.hpp@{bfl-\/ranges.hpp}}
 \doxysubsubsection{\texorpdfstring{contains\_all()}{contains\_all()}}
-{\footnotesize\ttfamily \label{bfl-ranges_8hpp_ae3b05b3b06c890d53bc1f80257fcfc72} 
-template$<$typename Container , typename... Values$>$ \\
-bool bfl\+::ranges\+::contains\+\_\+all (\begin{DoxyParamCaption}\item[{const Container \&}]{container}{, }\item[{Values \&\&...}]{values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename Container , typename... Values$>$ \\
+bool bfl\+::ranges\+::contains\+\_\+all (\begin{DoxyParamCaption}\item[{const Container \&}]{container,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -63,12 +64,12 @@ bool bfl\+::ranges\+::contains\+\_\+all (\begin{DoxyParamCaption}\item[{const Co
 \mbox{\texttt{ in}}  & {\em values} & -\/ any values \\
 \hline
 \end{DoxyParams}
-\Hypertarget{bfl-ranges_8hpp_acba250201ee81f25d36fa585e308def0}\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!contains\_any@{contains\_any}}
+\Hypertarget{bfl-ranges_8hpp_acba250201ee81f25d36fa585e308def0}\label{bfl-ranges_8hpp_acba250201ee81f25d36fa585e308def0} 
+\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!contains\_any@{contains\_any}}
 \index{contains\_any@{contains\_any}!bfl-\/ranges.hpp@{bfl-\/ranges.hpp}}
 \doxysubsubsection{\texorpdfstring{contains\_any()}{contains\_any()}}
-{\footnotesize\ttfamily \label{bfl-ranges_8hpp_acba250201ee81f25d36fa585e308def0} 
-template$<$typename Container , typename... Values$>$ \\
-bool bfl\+::ranges\+::contains\+\_\+any (\begin{DoxyParamCaption}\item[{const Container \&}]{container}{, }\item[{Values \&\&...}]{values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename Container , typename... Values$>$ \\
+bool bfl\+::ranges\+::contains\+\_\+any (\begin{DoxyParamCaption}\item[{const Container \&}]{container,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -77,12 +78,12 @@ bool bfl\+::ranges\+::contains\+\_\+any (\begin{DoxyParamCaption}\item[{const Co
 \mbox{\texttt{ in}}  & {\em values} & -\/ any values \\
 \hline
 \end{DoxyParams}
-\Hypertarget{bfl-ranges_8hpp_a3007bd0af844b1141d18744fe98dba0f}\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!contains\_none@{contains\_none}}
+\Hypertarget{bfl-ranges_8hpp_a3007bd0af844b1141d18744fe98dba0f}\label{bfl-ranges_8hpp_a3007bd0af844b1141d18744fe98dba0f} 
+\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!contains\_none@{contains\_none}}
 \index{contains\_none@{contains\_none}!bfl-\/ranges.hpp@{bfl-\/ranges.hpp}}
 \doxysubsubsection{\texorpdfstring{contains\_none()}{contains\_none()}}
-{\footnotesize\ttfamily \label{bfl-ranges_8hpp_a3007bd0af844b1141d18744fe98dba0f} 
-template$<$typename Container , typename... Values$>$ \\
-bool bfl\+::ranges\+::contains\+\_\+none (\begin{DoxyParamCaption}\item[{const Container \&}]{container}{, }\item[{Values \&\&...}]{values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename Container , typename... Values$>$ \\
+bool bfl\+::ranges\+::contains\+\_\+none (\begin{DoxyParamCaption}\item[{const Container \&}]{container,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -91,13 +92,13 @@ bool bfl\+::ranges\+::contains\+\_\+none (\begin{DoxyParamCaption}\item[{const C
 \mbox{\texttt{ in}}  & {\em values} & -\/ any values \\
 \hline
 \end{DoxyParams}
-\Hypertarget{bfl-ranges_8hpp_ab9ab80de78da553cfc41a8f027343926}\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!push\_back\_range@{push\_back\_range}}
+\Hypertarget{bfl-ranges_8hpp_ab9ab80de78da553cfc41a8f027343926}\label{bfl-ranges_8hpp_ab9ab80de78da553cfc41a8f027343926} 
+\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!push\_back\_range@{push\_back\_range}}
 \index{push\_back\_range@{push\_back\_range}!bfl-\/ranges.hpp@{bfl-\/ranges.hpp}}
 \doxysubsubsection{\texorpdfstring{push\_back\_range()}{push\_back\_range()}}
-{\footnotesize\ttfamily \label{bfl-ranges_8hpp_ab9ab80de78da553cfc41a8f027343926} 
-template$<$typename Container , typename... Values$>$ \newline
+{\footnotesize\ttfamily template$<$typename Container , typename... Values$>$ \newline
 requires (std\+::same\+\_\+as$<$typename Container\+::value\+\_\+type, Values$>$ \&\& ...)\\
-auto bfl\+::ranges\+::push\+\_\+back\+\_\+range (\begin{DoxyParamCaption}\item[{Container \&}]{container}{, }\item[{Values \&\&...}]{values}{}\end{DoxyParamCaption}) -\/$>$ decltype(std\+::declval$<$Container$>$().push\+\_\+back(typename Container\+::value\+\_\+type\{\}))         \hspace{0.3cm}{\ttfamily [inline]}}
+auto bfl\+::ranges\+::push\+\_\+back\+\_\+range (\begin{DoxyParamCaption}\item[{Container \&}]{container,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption}) -\/$>$ decltype(std\+::declval$<$Container$>$().push\+\_\+back(typename Container\+::value\+\_\+type\{\}))         \hspace{0.3cm}{\ttfamily [inline]}}
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -106,13 +107,13 @@ auto bfl\+::ranges\+::push\+\_\+back\+\_\+range (\begin{DoxyParamCaption}\item[{
 \mbox{\texttt{ in}}  & {\em values} & -\/ values to be added \\
 \hline
 \end{DoxyParams}
-\Hypertarget{bfl-ranges_8hpp_a2218905ac4ba21700e20974544e072fd}\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!push\_front\_range@{push\_front\_range}}
+\Hypertarget{bfl-ranges_8hpp_a2218905ac4ba21700e20974544e072fd}\label{bfl-ranges_8hpp_a2218905ac4ba21700e20974544e072fd} 
+\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!push\_front\_range@{push\_front\_range}}
 \index{push\_front\_range@{push\_front\_range}!bfl-\/ranges.hpp@{bfl-\/ranges.hpp}}
 \doxysubsubsection{\texorpdfstring{push\_front\_range()}{push\_front\_range()}}
-{\footnotesize\ttfamily \label{bfl-ranges_8hpp_a2218905ac4ba21700e20974544e072fd} 
-template$<$typename Container , typename... Values$>$ \newline
+{\footnotesize\ttfamily template$<$typename Container , typename... Values$>$ \newline
 requires (std\+::same\+\_\+as$<$typename Container\+::value\+\_\+type, Values$>$ \&\& ...)\\
-auto bfl\+::ranges\+::push\+\_\+front\+\_\+range (\begin{DoxyParamCaption}\item[{Container \&}]{container}{, }\item[{Values \&\&...}]{values}{}\end{DoxyParamCaption}) -\/$>$ decltype(std\+::declval$<$Container$>$().push\+\_\+front(typename Container\+::value\+\_\+type\{\}))         \hspace{0.3cm}{\ttfamily [inline]}}
+auto bfl\+::ranges\+::push\+\_\+front\+\_\+range (\begin{DoxyParamCaption}\item[{Container \&}]{container,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption}) -\/$>$ decltype(std\+::declval$<$Container$>$().push\+\_\+front(typename Container\+::value\+\_\+type\{\}))         \hspace{0.3cm}{\ttfamily [inline]}}
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -121,13 +122,13 @@ auto bfl\+::ranges\+::push\+\_\+front\+\_\+range (\begin{DoxyParamCaption}\item[
 \mbox{\texttt{ in}}  & {\em values} & -\/ values to be added \\
 \hline
 \end{DoxyParams}
-\Hypertarget{bfl-ranges_8hpp_a1ca1c47d27f4523b66da36d20d4745ee}\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!push\_range@{push\_range}}
+\Hypertarget{bfl-ranges_8hpp_a1ca1c47d27f4523b66da36d20d4745ee}\label{bfl-ranges_8hpp_a1ca1c47d27f4523b66da36d20d4745ee} 
+\index{bfl-\/ranges.hpp@{bfl-\/ranges.hpp}!push\_range@{push\_range}}
 \index{push\_range@{push\_range}!bfl-\/ranges.hpp@{bfl-\/ranges.hpp}}
 \doxysubsubsection{\texorpdfstring{push\_range()}{push\_range()}}
-{\footnotesize\ttfamily \label{bfl-ranges_8hpp_a1ca1c47d27f4523b66da36d20d4745ee} 
-template$<$typename Container , typename... Values$>$ \newline
+{\footnotesize\ttfamily template$<$typename Container , typename... Values$>$ \newline
 requires (std\+::same\+\_\+as$<$typename Container\+::value\+\_\+type, Values$>$ \&\& ...)\\
-auto bfl\+::ranges\+::push\+\_\+range (\begin{DoxyParamCaption}\item[{Container \&}]{container}{, }\item[{Values \&\&...}]{values}{}\end{DoxyParamCaption}) -\/$>$ decltype(std\+::declval$<$Container$>$().push(typename Container\+::value\+\_\+type\{\}))         \hspace{0.3cm}{\ttfamily [inline]}}
+auto bfl\+::ranges\+::push\+\_\+range (\begin{DoxyParamCaption}\item[{Container \&}]{container,  }\item[{Values \&\&...}]{values }\end{DoxyParamCaption}) -\/$>$ decltype(std\+::declval$<$Container$>$().push(typename Container\+::value\+\_\+type\{\}))         \hspace{0.3cm}{\ttfamily [inline]}}
 
 
 \begin{DoxyParams}[1]{Parameters}

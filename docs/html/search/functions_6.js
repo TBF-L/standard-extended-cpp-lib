@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['setenvvar_0',['SetEnvVar',['../namespacegtest__test__utils.html#abece99ff6c6b9c882ab12c15793898bf',1,'gtest_test_utils']]],
-  ['setup_1',['setUp',['../classgoogletest-filter-unittest_1_1GTestFilterUnitTest.html#a80e82b6c777fbbf575ad83cb8d2ae56c',1,'googletest-filter-unittest::GTestFilterUnitTest']]]
+  ['_7eauto_5fperf_5ftimer_0',['~auto_perf_timer',['../classbfl_1_1auto__perf__timer.html#ae97ed23f9982d07ef0c2145e68a64808',1,'bfl::auto_perf_timer']]],
+  ['_7eperf_5ftimer_1',['~perf_timer',['../classbfl_1_1perf__timer.html#ad331c539d89cd1f486b57ec9be069ab1',1,'bfl::perf_timer']]]
 ];

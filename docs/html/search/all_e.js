@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🖥_20supported_20os_0',['🖥 Supported OS',['../index.html#autotoc_md2',1,'']]]
+  ['🎯_20purpose_20of_20this_20project_0',['🎯 Purpose of this project',['../index.html#autotoc_md1',1,'']]]
 ];

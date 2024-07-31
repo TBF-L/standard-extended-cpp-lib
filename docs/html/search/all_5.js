@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['of_20this_20project_0',['🎯 Purpose of this project',['../index.html#autotoc_md1',1,'']]],
-  ['os_1',['🖥 Supported OS',['../index.html#autotoc_md2',1,'']]]
+  ['get_5fresult_0',['get_result',['../classbfl_1_1perf__timer.html#ada0d664442e708accf470d81d50ea0c8',1,'bfl::perf_timer']]]
 ];

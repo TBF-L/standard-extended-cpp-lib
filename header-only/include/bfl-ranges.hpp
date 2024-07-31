@@ -29,6 +29,7 @@
 #include <concepts>
 #include <ranges>
 #include <utility>
+#include <algorithm>
 
 namespace bfl
 {

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['extended_20c_20library_0',['Standard Extended C++ Library',['../index.html',1,'']]]
+  ['docs_0',['📄 Docs',['../index.html#autotoc_md6',1,'']]]
 ];
