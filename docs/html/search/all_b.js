@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🎯_20purpose_20of_20this_20project_0',['🎯 Purpose of this project',['../index.html#autotoc_md1',1,'']]]
+  ['ustring_0',['ustring',['../classbfl_1_1utf8_1_1ustring.html',1,'bfl::utf8']]]
 ];

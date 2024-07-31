@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['📜_20supported_20compilers_0',['📜 Supported Compilers',['../index.html#autotoc_md3',1,'']]]
+  ['⚙️_20tech_20stack_0',['⚙️ Tech Stack',['../index.html#autotoc_md4',1,'']]]
 ];
